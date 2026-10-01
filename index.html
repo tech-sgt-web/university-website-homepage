@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aetheria International University | Empowering Minds, Shaping Tomorrow</title>
+  <!-- Google Fonts & FontAwesome Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Top Notification & Utility Bar -->
+  <div class="top-bar">
+    <div class="container top-bar-container">
+      <div class="top-bar-notice">
+        <span class="badge badge-amber"><i class="fa-solid fa-bullhorn"></i> Announcement</span>
+        <span class="notice-text">Fall 2027 Admissions Open! Virtual Info Session on Oct 18.</span>
+      </div>
+      <div class="top-bar-links">
+        <a href="#admissions"><i class="fa-solid fa-graduation-cap"></i> Apply Online</a>
+        <a href="#" id="portal-link"><i class="fa-solid fa-user-lock"></i> Student Portal</a>
+        <a href="#" id="library-link"><i class="fa-solid fa-book-open"></i> Library</a>
+        <div class="lang-selector">
+          <i class="fa-solid fa-globe"></i>
+          <select id="lang-select">
+            <option value="en">English (US)</option>
+            <option value="es">Español</option>
+            <option value="fr">Français</option>
+            <option value="de">Deutsch</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header / Navigation Bar -->
+  <header class="main-header" id="header">
+    <div class="container header-container">
+      <a href="#" class="brand-logo">
+        <div class="logo-crest">
+          <i class="fa-solid fa-university"></i>
+        </div>
+        <div class="brand-text">
+          <span class="brand-name">AETHERIA</span>
+          <span class="brand-sub">INTERNATIONAL UNIVERSITY</span>
+        </div>
+      </a>
+
+      <nav class="nav-menu" id="nav-menu">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#hero" class="nav-link active">Home</a></li>
+          <li class="nav-item dropdown">
+            <a href="#faculties" class="nav-link dropdown-toggle" id="faculties-dropdown-toggle">
+              Faculties <i class="fa-solid fa-chevron-down nav-arrow"></i>
+            </a>
+            <div class="dropdown-menu megamenu" id="faculties-megamenu">
+              <div class="megamenu-header">
+                <span><i class="fa-solid fa-sitemap"></i> Explore All 18 Academic Faculties</span>
+              </div>
+              <div class="dropdown-grid">
+                <!-- Column 1: STEM & Tech -->
+                <div class="megamenu-col">
+                  <h5 class="megamenu-title"><i class="fa-solid fa-laptop-code"></i> Technology & Engineering</h5>
+                  <ul>
+                    <li><a href="#academics" class="faculty-link"><i class="fa-solid fa-brain"></i> Computer Science & AI</a></li>
+                    <li><a href="#academics" class="faculty-link"><i class="fa-solid fa-gear"></i> Engineering & Technology</a></li>
+                    <li><a href="#academics" class="faculty-link"><i class="fa-solid fa-shield-halved"></i> Cybersecurity & Cyber Defense</a></li>
+                    <li><a href="#academics" class="faculty-link"><i class="fa-solid fa-atom"></i> Applied Physics & Astronomy</a></li>
+                    <li><a href="#academics" class="faculty-link"><i class="fa-solid fa-square-root-variable"></i> Natural Sciences & Mathematics</a></li>
+                    <li><a href="#academics" class="faculty-link"><i class="fa-solid fa-seedling"></i> Environmental Studies & Sustainability</a></li>
+                  </ul>
+                </div>
+                <!-- Column 2: Health & Life Sciences -->
+                <div class="megamenu-col">
+                  <h5 class="megamenu-title"><i class="fa-solid fa-heart-pulse"></i> Health & Life Sciences</h5>
+                  <ul>
+                    <li><a href="#academics" class="faculty-link"><i class="fa-solid fa-dna"></i> Biomedical Sciences & Medicine</a></li>
+                    <li><a href="#academics" class="faculty-link"><i class="fa-solid fa-pills"></i> Pharmacy & Pharmaceutical Sciences</a></li>
+                    <li><a href="#academics" class="faculty-link"><i class="fa-solid fa-head-side-virus"></i> Psychology & Brain Sciences</a></li>
+                    <li><a href="#academics" class="faculty-link"><i class="fa-solid fa-wheat-awn"></i> Agriculture & Life Sciences</a></li>
+                  </ul>
+                  <h5 class="megamenu-title mt-3"><i class="fa-solid fa-scale-balanced"></i> Law & Management</h5>
+                  <ul>
+                    <li><a href="#academics" class="faculty-link"><i class="fa-solid fa-briefcase"></i> Business Administration & Management</a></li>
+                    <li><a href="#academics" class="faculty-link"><i class="fa-solid fa-gavel"></i> Law & Legal Studies</a></li>
+                  </ul>
+                </div>
+                <!-- Column 3: Humanities, Arts & Policy -->
+                <div class="megamenu-col">
+                  <h5 class="megamenu-title"><i class="fa-solid fa-landmark"></i> Arts, Humanities & Policy</h5>
+                  <ul>
+                    <li><a href="#academics" class="faculty-link"><i class="fa-solid fa-chart-line"></i> Economics & Public Policy</a></li>
+                    <li><a href="#academics" class="faculty-link"><i class="fa-solid fa-book"></i> Humanities & Social Sciences</a></li>
+                    <li><a href="#academics" class="faculty-link"><i class="fa-solid fa-palette"></i> Arts, Design & Architecture</a></li>
+                    <li><a href="#academics" class="faculty-link"><i class="fa-solid fa-tower-cell"></i> Media, Journalism & Communications</a></li>
+                    <li><a href="#academics" class="faculty-link"><i class="fa-solid fa-chalkboard-user"></i> Education & Pedagogy</a></li>
+                    <li><a href="#academics" class="faculty-link"><i class="fa-solid fa-music"></i> Music & Performing Arts</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item"><a href="#academics" class="nav-link">Academics</a></li>
+          <li class="nav-item"><a href="#campus-life" class="nav-link">Campus Life</a></li>
+          <li class="nav-item"><a href="#research" class="nav-link">Research</a></li>
+          <li class="nav-item"><a href="#admissions" class="nav-link">Admissions</a></li>
+          <li class="nav-item"><a href="#news-events" class="nav-link">News & Events</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button class="icon-btn" id="search-trigger-btn" aria-label="Search">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+        <a href="#admissions" class="btn btn-primary btn-sm">Apply Now</a>
+        <button class="mobile-toggle" id="mobile-menu-btn" aria-label="Toggle Menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section" id="hero">
+    <div class="hero-overlay"></div>
+    <div class="container hero-container">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <i class="fa-solid fa-star"></i> Excellence in Higher Education & Research
+        </div>
+        <h1 class="hero-title">Empowering Minds.<br><span class="highlight-text">Shaping Tomorrow.</span></h1>
+        <p class="hero-description">
+          Welcome to Aetheria International University—a world-class hub of innovation, vibrant campus life, and pioneering research empowering the next generation of global leaders.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#academics" class="btn btn-primary btn-lg">
+            <i class="fa-solid fa-compass"></i> Explore Programs
+          </a>
+          <button class="btn btn-secondary btn-lg" id="tour-btn">
+            <i class="fa-solid fa-play"></i> Virtual Campus Tour
+          </button>
+        </div>
+
+        <div class="hero-stats-row">
+          <div class="hero-stat-card">
+            <span class="stat-number" data-target="12">#0</span>
+            <span class="stat-label">Global Rank</span>
+          </div>
+          <div class="hero-stat-card">
+            <span class="stat-number" data-target="98">0%</span>
+            <span class="stat-label">Career Placement</span>
+          </div>
+          <div class="hero-stat-card">
+            <span class="stat-number" data-target="480">$0M+</span>
+            <span class="stat-label">Research Grants</span>
+          </div>
+          <div class="hero-stat-card">
+            <span class="stat-number" data-target="150">0+</span>
+            <span class="stat-label">Global Partners</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quick Ticker -->
+  <div class="ticker-bar">
+    <div class="ticker-wrapper">
+      <span class="ticker-label"><i class="fa-solid fa-bolt"></i> HIGHLIGHTS:</span>
+      <div class="ticker-content" id="ticker-content">
+        <span><i class="fa-solid fa-award"></i> AIU Ranked Top 15 Public Universities Worldwide</span>
+        <span><i class="fa-solid fa-microscope"></i> $50M Quantum Computing Lab Opened at Science Complex</span>
+        <span><i class="fa-solid fa-calendar-check"></i> Fall 2027 Priority Application Deadline: Dec 1, 2026</span>
+        <span><i class="fa-solid fa-earth-americas"></i> 3,500+ International Students Representing 110 Countries</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Academics / Programs Explorer Section -->
+  <section class="section academics-section" id="academics">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-subtitle"><i class="fa-solid fa-book-bookmark"></i> ACADEMIC EXCELLENCE</span>
+        <h2 class="section-title">Discover Your Degree Path</h2>
+        <p class="section-description">
+          Choose from over 120 undergraduate, graduate, and doctoral degree programs designed to spark innovation and industry readiness.
+        </p>
+      </div>
+
+      <!-- Filter and Search Controls -->
+      <div class="program-controls">
+        <div class="program-filter-tabs">
+          <button class="filter-btn active" data-filter="all">All Programs</button>
+          <button class="filter-btn" data-filter="undergraduate">Undergraduate</button>
+          <button class="filter-btn" data-filter="postgraduate">Graduate & Master</button>
+          <button class="filter-btn" data-filter="doctoral">Ph.D. & Doctoral</button>
+          <button class="filter-btn" data-filter="executive">Executive & Online</button>
+        </div>
+
+        <div class="program-search-box">
+          <i class="fa-solid fa-search"></i>
+          <input type="text" id="program-search-input" placeholder="Search degrees (e.g. Computer Science, Medicine, Business)...">
+        </div>
+      </div>
+
+      <!-- Program Cards Grid -->
+      <div class="programs-grid" id="programs-grid">
+        <!-- JS dynamically populates programs -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Campus Life Showcase Section -->
+  <section class="section campus-life-section" id="campus-life">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-header-left">
+          <span class="section-subtitle"><i class="fa-solid fa-users"></i> LIFE AT AETHERIA</span>
+          <h2 class="section-title">Experience Vibrant Campus Culture</h2>
+        </div>
+        <p class="section-header-right">
+          From state-of-the-art residential communities to championship athletic teams and 200+ student organizations, campus life at AIU is full of energy and opportunity.
+        </p>
+      </div>
+
+      <!-- Interactive Tabs -->
+      <div class="tabs-container">
+        <div class="tabs-header">
+          <button class="tab-btn active" data-tab="housing">
+            <i class="fa-solid fa-hotel"></i> Housing & Dining
+          </button>
+          <button class="tab-btn" data-tab="labs">
+            <i class="fa-solid fa-flask-vial"></i> Research & Labs
+          </button>
+          <button class="tab-btn" data-tab="athletics">
+            <i class="fa-solid fa-trophy"></i> Athletics & Fitness
+          </button>
+          <button class="tab-btn" data-tab="culture">
+            <i class="fa-solid fa-masks-theater"></i> Arts & Culture
+          </button>
+        </div>
+
+        <div class="tabs-content">
+          <!-- Housing Tab -->
+          <div class="tab-pane active" id="tab-housing">
+            <div class="tab-grid">
+              <div class="tab-info">
+                <h3>Modern Residence Halls & Culinary Excellence</h3>
+                <p>Enjoy comfortable, high-tech living quarters equipped with high-speed fiber internet, study lounges, eco-friendly amenities, and 24/7 campus security.</p>
+                <ul class="feature-list">
+                  <li><i class="fa-solid fa-circle-check"></i> 14 Distinct Residence Halls with suite and apartment styles</li>
+                  <li><i class="fa-solid fa-circle-check"></i> 8 Dining Halls with organic, vegan, and global cuisines</li>
+                  <li><i class="fa-solid fa-circle-check"></i> Free campus shuttle system running every 10 minutes</li>
+                </ul>
+                <button class="btn btn-outline" id="housing-modal-btn">Explore Housing Guide</button>
+              </div>
+              <div class="tab-visual">
+                <div class="visual-card">
+                  <div class="visual-icon"><i class="fa-solid fa-building-user"></i></div>
+                  <div class="visual-caption">
+                    <h4>Aetheria Quadrangle Hall</h4>
+                    <p>Award-winning sustainable residential complex opened in 2025.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Labs Tab -->
+          <div class="tab-pane" id="tab-labs">
+            <div class="tab-grid">
+              <div class="tab-info">
+                <h3>Cutting-Edge Research & Innovation Facilities</h3>
+                <p>Access world-class supercomputing suites, cleanrooms, robotics testing arenas, and biotechnology incubators powered by industrial partnerships.</p>
+                <ul class="feature-list">
+                  <li><i class="fa-solid fa-circle-check"></i> Advanced Neural & AI Simulation Lab</li>
+                  <li><i class="fa-solid fa-circle-check"></i> Clean Energy & Photovoltaics Testbed</li>
+                  <li><i class="fa-solid fa-circle-check"></i> Genomic Sequencing & Bio-Discovery Hub</li>
+                </ul>
+                <button class="btn btn-outline">View Research Centers</button>
+              </div>
+              <div class="tab-visual">
+                <div class="visual-card">
+                  <div class="visual-icon"><i class="fa-solid fa-atom"></i></div>
+                  <div class="visual-caption">
+                    <h4>Quantum Photonics Center</h4>
+                    <p>Conducting breakthrough experiments in optical computing.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Athletics Tab -->
+          <div class="tab-pane" id="tab-athletics">
+            <div class="tab-grid">
+              <div class="tab-info">
+                <h3>Championship Athletics & Intramural Sports</h3>
+                <p>Home of the Aetheria Falcons! Compete in Division I varsity teams or participate in 30+ intramural sports clubs and fitness centers.</p>
+                <ul class="feature-list">
+                  <li><i class="fa-solid fa-circle-check"></i> 45,000-seat Stadium & Olympic Swimming Complex</li>
+                  <li><i class="fa-solid fa-circle-check"></i> 24/7 Fitness center with personal training & yoga studios</li>
+                  <li><i class="fa-solid fa-circle-check"></i> Esports Arena with tournament-grade gaming setups</li>
+                </ul>
+                <button class="btn btn-outline">Falcons Sports Hub</button>
+              </div>
+              <div class="tab-visual">
+                <div class="visual-card">
+                  <div class="visual-icon"><i class="fa-solid fa-person-running"></i></div>
+                  <div class="visual-caption">
+                    <h4>Falcons Athletic Complex</h4>
+                    <p>Host of national university championships and athletic games.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Culture Tab -->
+          <div class="tab-pane" id="tab-culture">
+            <div class="tab-grid">
+              <div class="tab-info">
+                <h3>Vibrant Arts, Music & Cultural Life</h3>
+                <p>Immerse yourself in theatrical performances, art exhibitions, global cultural galas, and live orchestral concerts held on campus year-round.</p>
+                <ul class="feature-list">
+                  <li><i class="fa-solid fa-circle-check"></i> 1,200-seat Performing Arts Center & Concert Hall</li>
+                  <li><i class="fa-solid fa-circle-check"></i> Contemporary Art Museum & Student Sculpture Garden</li>
+                  <li><i class="fa-solid fa-circle-check"></i> Annual International Culture Festival & Film Gala</li>
+                </ul>
+                <button class="btn btn-outline">Campus Arts Calendar</button>
+              </div>
+              <div class="tab-visual">
+                <div class="visual-card">
+                  <div class="visual-icon"><i class="fa-solid fa-palette"></i></div>
+                  <div class="visual-caption">
+                    <h4>Aetheria Arts Center</h4>
+                    <p>Promoting creative expression across all artistic disciplines.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Research Spotlight Banner -->
+  <section class="research-banner-section" id="research">
+    <div class="container">
+      <div class="research-banner">
+        <div class="research-content">
+          <span class="badge badge-primary"><i class="fa-solid fa-lightbulb"></i> PIONEERING INNOVATION</span>
+          <h2>Pushing Boundaries in Renewable Energy & Artificial Intelligence</h2>
+          <p>AIU researchers were awarded 18 global patents this past year. Our multi-disciplinary teams are tackling climate resilience, quantum cryptography, and gene-editing therapeutics.</p>
+          <div class="research-actions">
+            <a href="#" class="btn btn-amber">Read Research Annual Report</a>
+            <a href="#" class="btn btn-ghost">Partner With Our Labs</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Admissions & Interactive Tuition Estimator Section -->
+  <section class="section admissions-section" id="admissions">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-subtitle"><i class="fa-solid fa-user-plus"></i> JOIN OUR COMMUNITY</span>
+        <h2 class="section-title">Admissions & Financial Aid</h2>
+        <p class="section-description">We are committed to making higher education accessible. Over 80% of AIU undergraduates receive financial aid, grants, or merit scholarships.</p>
+      </div>
+
+      <div class="admissions-grid">
+        <!-- Application Steps -->
+        <div class="admissions-steps">
+          <h3 class="box-title"><i class="fa-solid fa-route"></i> Your 4-Step Application Path</h3>
+          <div class="step-card">
+            <div class="step-number">1</div>
+            <div class="step-details">
+              <h4>Choose Your Program</h4>
+              <p>Explore our degree offerings and check specific prerequisite requirements.</p>
+            </div>
+          </div>
+
+          <div class="step-card">
+            <div class="step-number">2</div>
+            <div class="step-details">
+              <h4>Prepare Documents</h4>
+              <p>Gather official transcripts, letters of recommendation, and personal statement.</p>
+            </div>
+          </div>
+
+          <div class="step-card">
+            <div class="step-number">3</div>
+            <div class="step-details">
+              <h4>Apply for Financial Aid & Merit Grants</h4>
+              <p>Submit FAFSA/CSS Profile or international scholarship application by Nov 15.</p>
+            </div>
+          </div>
+
+          <div class="step-card">
+            <div class="step-number">4</div>
+            <div class="step-details">
+              <h4>Submit Application Portal</h4>
+              <p>Complete your application online via Common App or AIU Direct Portal.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tuition Estimator Widget -->
+        <div class="calculator-card">
+          <h3 class="box-title"><i class="fa-solid fa-calculator"></i> Quick Tuition Cost Estimator</h3>
+          <p class="calc-subtitle">Estimate annual tuition and residential expenses based on your preferences:</p>
+
+          <form id="tuition-form" onsubmit="event.preventDefault();">
+            <div class="form-group">
+              <label for="calc-level">Academic Level</label>
+              <select id="calc-level" class="form-select">
+                <option value="undergrad">Undergraduate Degree</option>
+                <option value="postgrad">Postgraduate / Master's Degree</option>
+                <option value="doctoral">Ph.D. Candidate (Fully Funded Available)</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="calc-residency">Residency Status</label>
+              <select id="calc-residency" class="form-select">
+                <option value="in-state">In-State Resident</option>
+                <option value="out-state">Out-of-State Resident</option>
+                <option value="international">International Student</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="calc-housing">Housing Preference</label>
+              <select id="calc-housing" class="form-select">
+                <option value="on-campus">On-Campus Residence & Meal Plan</option>
+                <option value="off-campus">Off-Campus Housing</option>
+                <option value="commuter">Commuter / Living with Family</option>
+              </select>
+            </div>
+
+            <div class="calc-result-box">
+              <div class="result-row">
+                <span>Tuition & Fees:</span>
+                <strong id="res-tuition">$18,500</strong>
+              </div>
+              <div class="result-row">
+                <span>Room & Board:</span>
+                <strong id="res-housing">$11,200</strong>
+              </div>
+              <div class="result-row">
+                <span>Estimated Merit Aid Avg:</span>
+                <span class="text-green" id="res-aid">-$6,000</span>
+              </div>
+              <hr class="divider">
+              <div class="result-total">
+                <span>Estimated Net Cost / Year:</span>
+                <span class="total-price" id="res-total">$23,700</span>
+              </div>
+            </div>
+
+            <button type="button" class="btn btn-primary btn-block mt-3" id="apply-modal-trigger">
+              Start Application Form
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- News & Events Section -->
+  <section class="section news-events-section" id="news-events">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-header-left">
+          <span class="section-subtitle"><i class="fa-solid fa-newspaper"></i> STAY INFORMED</span>
+          <h2 class="section-title">Latest News & Campus Events</h2>
+        </div>
+        <a href="#" class="btn btn-outline">View Newsroom Archive</a>
+      </div>
+
+      <div class="news-events-grid">
+        <!-- News Articles Grid -->
+        <div class="news-list">
+          <article class="news-card">
+            <div class="news-badge">Research</div>
+            <div class="news-content">
+              <div class="news-meta">
+                <span><i class="fa-regular fa-calendar"></i> Oct 02, 2026</span> •
+                <span><i class="fa-regular fa-clock"></i> 4 min read</span>
+              </div>
+              <h3 class="news-title"><a href="#">AIU Research Team Discovers Breakthrough Clean Hydrogen Catalyst</a></h3>
+              <p class="news-excerpt">The multi-year study published in Nature Energy outlines an affordable solar water-splitting catalyst that could revolutionize green fuel production.</p>
+              <a href="#" class="read-more">Read Full Story <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </article>
+
+          <article class="news-card">
+            <div class="news-badge badge-blue">Academics</div>
+            <div class="news-content">
+              <div class="news-meta">
+                <span><i class="fa-regular fa-calendar"></i> Sep 28, 2026</span> •
+                <span><i class="fa-regular fa-clock"></i> 3 min read</span>
+              </div>
+              <h3 class="news-title"><a href="#">AIU Launches New Dual Degree in Artificial Intelligence & Ethics</a></h3>
+              <p class="news-excerpt">Combining computer science with philosophy and law, this interdisciplinary degree prepares leaders to build responsible autonomous systems.</p>
+              <a href="#" class="read-more">Read Full Story <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </article>
+        </div>
+
+        <!-- Upcoming Events List -->
+        <div class="events-list">
+          <h3 class="events-header"><i class="fa-solid fa-calendar-days"></i> Upcoming Campus Events</h3>
+
+          <div class="event-item">
+            <div class="event-date">
+              <span class="day">18</span>
+              <span class="month">OCT</span>
+            </div>
+            <div class="event-info">
+              <span class="event-tag">Admissions</span>
+              <h4 class="event-title">Fall 2027 Virtual Open House & Dean's Q&A</h4>
+              <p class="event-meta"><i class="fa-solid fa-clock"></i> 2:00 PM EST • Zoom Virtual Session</p>
+            </div>
+            <button class="btn btn-sm btn-ghost add-cal-btn"><i class="fa-solid fa-plus"></i></button>
+          </div>
+
+          <div class="event-item">
+            <div class="event-date">
+              <span class="day">25</span>
+              <span class="month">OCT</span>
+            </div>
+            <div class="event-info">
+              <span class="event-tag tag-purple">Lecture</span>
+              <h4 class="event-title">Distinguished Speaker Series: Global Climate Resilience</h4>
+              <p class="event-meta"><i class="fa-solid fa-clock"></i> 6:00 PM EST • Founders Auditorium</p>
+            </div>
+            <button class="btn btn-sm btn-ghost add-cal-btn"><i class="fa-solid fa-plus"></i></button>
+          </div>
+
+          <div class="event-item">
+            <div class="event-date">
+              <span class="day">05</span>
+              <span class="month">NOV</span>
+            </div>
+            <div class="event-info">
+              <span class="event-tag tag-green">Career</span>
+              <h4 class="event-title">Annual Technology & Innovation Career Fair 2026</h4>
+              <p class="event-meta"><i class="fa-solid fa-clock"></i> 10:00 AM EST • Student Union Center</p>
+            </div>
+            <button class="btn btn-sm btn-ghost add-cal-btn"><i class="fa-solid fa-plus"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter & Quick Contact -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-box">
+        <div class="cta-text">
+          <h2>Stay Connected with Aetheria</h2>
+          <p>Subscribe to our monthly newsletter for admissions updates, groundbreaking research news, and campus events.</p>
+        </div>
+        <form class="cta-form" id="newsletter-form">
+          <input type="email" placeholder="Enter your email address..." required>
+          <button type="submit" class="btn btn-amber">Subscribe Now</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="main-footer">
+    <div class="container footer-container">
+      <div class="footer-col footer-brand">
+        <div class="brand-logo footer-logo">
+          <div class="logo-crest">
+            <i class="fa-solid fa-university"></i>
+          </div>
+          <div class="brand-text">
+            <span class="brand-name">AETHERIA</span>
+            <span class="brand-sub">INTERNATIONAL UNIVERSITY</span>
+          </div>
+        </div>
+        <p class="footer-desc">
+          A premier higher education institution dedicated to academic excellence, innovative research, and fostering an inclusive global community.
+        </p>
+        <div class="social-links">
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="Twitter / X"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Academics</h4>
+        <ul class="footer-links">
+          <li><a href="#academics">Undergraduate Majors</a></li>
+          <li><a href="#academics">Graduate Programs</a></li>
+          <li><a href="#academics">Ph.D. Fellowships</a></li>
+          <li><a href="#academics">Online & Continuing Ed</a></li>
+          <li><a href="#">Academic Calendar</a></li>
+          <li><a href="#">Course Catalog</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Admissions & Aid</h4>
+        <ul class="footer-links">
+          <li><a href="#admissions">How to Apply</a></li>
+          <li><a href="#admissions">Tuition & Fees</a></li>
+          <li><a href="#admissions">Scholarships & Financial Aid</a></li>
+          <li><a href="#">International Admissions</a></li>
+          <li><a href="#">Schedule a Campus Tour</a></li>
+          <li><a href="#">Admissions FAQs</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contact & Location</h4>
+        <div class="contact-info">
+          <p><i class="fa-solid fa-location-dot"></i> 500 University Heights Parkway, Cambridge, MA 02138, USA</p>
+          <p><i class="fa-solid fa-phone"></i> +1 (800) 555-AIU2026</p>
+          <p><i class="fa-solid fa-envelope"></i> admissions@aetheria.edu</p>
+          <p><i class="fa-solid fa-clock"></i> Mon - Fri: 8:00 AM - 5:00 PM EST</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-container">
+        <p>&copy; 2026 Aetheria International University. All rights reserved.</p>
+        <div class="legal-links">
+          <a href="#">Privacy Policy</a> •
+          <a href="#">Terms of Use</a> •
+          <a href="#">Title IX & Compliance</a> •
+          <a href="#">Accessibility Statement</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Search Modal -->
+  <div class="modal-backdrop" id="search-modal">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <h3><i class="fa-solid fa-magnifying-glass"></i> Search Aetheria University</h3>
+        <button class="modal-close" id="search-modal-close">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="search-input-wrapper">
+          <input type="text" id="modal-search-input" placeholder="Search majors, news, faculty, portals..." autofocus>
+        </div>
+        <div class="quick-search-tags">
+          <span>Popular:</span>
+          <button class="tag-btn" data-search="Computer Science">Computer Science</button>
+          <button class="tag-btn" data-search="Scholarships">Scholarships</button>
+          <button class="tag-btn" data-search="Housing">Housing</button>
+          <button class="tag-btn" data-search="Academic Calendar">Calendar</button>
+        </div>
+        <div class="search-results-list" id="modal-search-results">
+          <p class="text-muted text-center py-4">Type a query above to see live search results.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Program Detail Modal -->
+  <div class="modal-backdrop" id="program-modal">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-header">
+        <h3 id="modal-prog-title">Program Details</h3>
+        <button class="modal-close" id="program-modal-close">&times;</button>
+      </div>
+      <div class="modal-body" id="modal-prog-body">
+        <!-- Content inserted dynamically by JS -->
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-secondary" id="program-modal-cancel">Close</button>
+        <a href="#admissions" class="btn btn-primary" id="program-modal-apply">Apply for this Program</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Application / Info Request Modal -->
+  <div class="modal-backdrop" id="apply-modal">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <h3><i class="fa-solid fa-paper-plane"></i> Start Your Application</h3>
+        <button class="modal-close" id="apply-modal-close">&times;</button>
+      </div>
+      <div class="modal-body">
+        <form id="quick-apply-form">
+          <div class="form-group">
+            <label for="app-fname">Full Name</label>
+            <input type="text" id="app-fname" class="form-control" placeholder="e.g. Jane Doe" required>
+          </div>
+          <div class="form-group">
+            <label for="app-email">Email Address</label>
+            <input type="email" id="app-email" class="form-control" placeholder="jane.doe@example.com" required>
+          </div>
+          <div class="form-group">
+            <label for="app-program">Intended Program of Study</label>
+            <select id="app-program" class="form-select" required>
+              <option value="">-- Select Program --</option>
+              <option value="cs">B.S. Computer Science & AI</option>
+              <option value="bio">B.S. Biomedical Engineering</option>
+              <option value="bus">M.B.A. Global Executive Leadership</option>
+              <option value="law">Juris Doctor (J.D.)</option>
+              <option value="ds">M.S. Data Science & Analytics</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="app-term">Target Enrollment Term</label>
+            <select id="app-term" class="form-select" required>
+              <option value="fall2027">Fall Semester 2027</option>
+              <option value="spring2027">Spring Semester 2027</option>
+              <option value="fall2028">Fall Semester 2028</option>
+            </select>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">Submit Application Interest</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toast-container"></div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
