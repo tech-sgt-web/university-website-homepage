@@ -381,3 +381,31 @@ document.addEventListener("DOMContentLoaded", function () {
   } else {
     initCampusTabs();
   }
+
+
+
+  (function initHappeningsSlider() {
+    const slides = document.querySelectorAll('.happening-slide');
+    const prevBtn = document.getElementById('lhPrev');
+    const nextBtn = document.getElementById('lhNext');
+    let currentIndex = 0;
+
+    if (!slides.length || !prevBtn || !nextBtn) return;
+
+    function goToSlide(index) {
+      slides.forEach((slide, i) => {
+        slide.classList.toggle('active', i === index);
+      });
+      currentIndex = index;
+    }
+
+    nextBtn.addEventListener('click', () => {
+      const nextIndex = (currentIndex + 1) % slides.length;
+      goToSlide(nextIndex);
+    });
+
+    prevBtn.addEventListener('click', () => {
+      const prevIndex = (currentIndex - 1 + slides.length) % slides.length;
+      goToSlide(prevIndex);
+    });
+  })();
