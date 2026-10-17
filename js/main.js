@@ -63,6 +63,13 @@ document.addEventListener("DOMContentLoaded", function () {
             description: "Explore physiotherapy and rehabilitation sciences.",
             url: "https://sgtuniversity.ac.in/physiotherapy/"
         },
+        {
+            id: "pharmaceutical-sciences-research",
+            title: "Pharmaceutical Sciences and Research",
+            category: "medical",
+            description: "Explore pharmaceutical sciences and research.",
+            url: "https://sgtuniversity.ac.in/"
+        },
 
         // NON-MEDICAL
         {
