@@ -81,7 +81,7 @@ document.addEventListener("DOMContentLoaded", function () {
         },
         {
             id: "applied-basic-sciences",
-            title: "Applied and Basic Sciences",
+            title: "Basic and Applied Sciences",
             category: "non-medical",
             description: "Explore applied and basic science disciplines.",
             url: "https://sgtuniversity.ac.in/science/"
@@ -144,7 +144,7 @@ document.addEventListener("DOMContentLoaded", function () {
         },
         {
             id: "mass-communication",
-            title: "Mass Communication and Media Technology",
+            title: "Emerging Media, Communication and Film Studies",
             category: "non-medical",
             description: "Explore media, journalism and communication.",
             url: "https://sgtuniversity.ac.in/masscomm/"
